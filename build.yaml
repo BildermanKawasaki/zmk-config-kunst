@@ -19,6 +19,7 @@ include:
 #    shield: kunst_dongle_left
 #  - board: nice_nano_v2
 #    shield: kunst_dongle_right
+ 
   - board: nice_nano_v2
     shield: kunst_left
   - board: nice_nano_v2
