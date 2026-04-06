@@ -20,8 +20,8 @@ include:
 #  - board: nice_nano_v2
 #    shield: kunst_dongle_right
   - board: nice_nano_v2
-    shield: kunst_norm_left
+    shield: kunst_left
   - board: nice_nano_v2
-    shield: kunst_norm_right
+    shield: kunst_right
   - board: nice_nano_v2
     shield: settings_reset
