@@ -120,6 +120,9 @@ ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
 ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUMNAV>, <&sl NUMNAV>;
               tapping-term-ms = <200>;)
 
+ZMK_HOLD_TAP(boot_hold, bindings = <&bootloader>, <&none>; flavor = "balanced";
+             tapping-term-ms = <2000>; quick-tap-ms = <QUICK_TAP_MS>;)
+
 /* Custom behaviors */
 
 // Alt+Tab swapper, requires tri-state module.
@@ -233,7 +236,7 @@ ZMK_BASE_LAYER(Sym,
 //╭─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────╮
     &kp EXCL      &kp AT        &kp POUND     &kp DLLR    ,   &kp AMPS      &kp STAR      &kp PRCNT     &kp CARET   ,
 //╰─────────────┴─────────────┴─────────────┼─────────────┤ ├─────────────┼─────────────┴─────────────┴─────────────╯
-                                &bootloader    ___         ,   &kp TILDE     ___         
+                                &boot_hold    ___         ,   &kp TILDE     &boot_hold         
 //                            ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
 
