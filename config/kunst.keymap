@@ -120,6 +120,7 @@ ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
 ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUMNAV>, <&sl NUMNAV>;
               tapping-term-ms = <200>;)
 
+#define BOOT_HOLD &boot_hold 0 0
 ZMK_HOLD_TAP(boot_hold, bindings = <&bootloader>, <&none>; flavor = "balanced";
              tapping-term-ms = <2000>; quick-tap-ms = <QUICK_TAP_MS>;)
 
@@ -236,7 +237,7 @@ ZMK_BASE_LAYER(Sym,
 //╭─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────╮
     &kp EXCL      &kp AT        &kp POUND     &kp DLLR    ,   &kp AMPS      &kp STAR      &kp PRCNT     &kp CARET   ,
 //╰─────────────┴─────────────┴─────────────┼─────────────┤ ├─────────────┼─────────────┴─────────────┴─────────────╯
-                                &boot_hold    ___         ,   &kp TILDE     &boot_hold         
+                                BOOT_HOLD     ___         ,   &kp TILDE     BOOT_HOLD         
 //                            ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
 
